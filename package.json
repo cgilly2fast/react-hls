@@ -16,6 +16,7 @@
     "start": "webpack serve --config webpack/webpack.dev.js",
     "test": "jest",
     "build": "tsc",
+    "test:esm": "node --input-type=module -e \"import('./dist/index.js').then(() => console.log('ok'))\"",
     "prepublishOnly": "npm run build"
   },
   "repository": {
